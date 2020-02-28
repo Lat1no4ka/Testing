@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    max-width: 600px;
+    margin: 100px auto;
+}
+
+.btn {
+    width: 90px;
+    height: 40px;
+    background: rgb(224, 224, 224);
+    border: 1px solid gray;
+}
+
+.btn:hover {
+    background: none;
+    transition: 0.4s linear;
+    cursor: pointer;
+}
+
+.text {
+    width: 140px;
+    height: 40px;
+    margin: 0 4px 4px 0;
+}
+
+.block {
+    text-align: center;
+}
+
+.info {
+    border: 1px solid gray;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(233, 232, 232));
+    padding-top: 3px;
+    max-width: 333px;
+    border-radius: 2px;
+}
+
+.info:hover {
+    background: rgb(233, 232, 232);
+    transition: 0.4s linear;
+    cursor: pointer;
+}
