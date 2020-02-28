@@ -11,6 +11,12 @@ function getdata() { //Выполнение запроса к контролер
     });
 }
 $(document).ajaxComplete(function() {
+    let elem = document.getElementById('info')
+    var child = elem.lastElementChild;
+    while (child) {
+        elem.removeChild(child);
+        child = elem.lastElementChild;
+    }
     getbase()
 });
 

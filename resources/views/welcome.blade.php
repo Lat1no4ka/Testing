@@ -17,6 +17,7 @@
     <input id="text" type="text" class="text">
     <input class="btn" id="update" type="button" value="Обновить" onclick="getdata()">
     <input class="btn" id="add" type="button" value="Добавить " onclick="getbase()">
+    <p> Для пойска используйте буквенное обозначение нужной валюты</p>
     <div id="info" class="block"></div>
     </div>
    
