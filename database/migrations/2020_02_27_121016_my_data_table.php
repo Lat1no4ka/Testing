@@ -16,7 +16,7 @@ class MyDataTable extends Migration
         Schema::create('data', function ($table) {
             $table->integer('id');
             $table->string('base');
-            $table->float('value');
+            $table->string('value');
             $table->datetime('date');
           });
        
