@@ -33,7 +33,8 @@ class BeforeMiddleware
                     $date = date("Y-m-d H:i:s");
                     foreach ($array['rates'] as $key => $value) {
                         $iter = $iter + 1;
-                        DB::insert('insert into data (id, base, value, date) values (?, ?, ?, ?)', [$iter, "$key", $value, $date]);
+                        $hash = Hash::make($value);
+                        DB::insert('insert into data (id, base, value, date) values (?, ?, ?, ?)', [$iter, "$key", "$hash", $date]);
                     }
                 }   
         } else {
