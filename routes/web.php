@@ -11,10 +11,10 @@
 |
 */
 
-
+use Illuminate\Http\Response;
 
 Route::get('/GetData', 'QUERY@GetData')->middleware('check'); //Перед выполнением запроса роутер проверяет состояние БД
 
 Route::get('/', function () {
-    return view('welcome');
+     return response()->view('welcome');
 });
